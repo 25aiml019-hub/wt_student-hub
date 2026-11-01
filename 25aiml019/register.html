@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register | StudentHub</title>
+<meta name="description" content="Create your StudentHub account.">
+<meta name="author" content="Daksh (25AIML019)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span>StudentHub</a>
+    <nav class="nav" id="mainNav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="event.html">Events</a><a href="campus.html">Campus</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+      <div class="actions" id="authBox"><a class="btn btn-ghost btn-sm" href="login.html">Login</a><a class="btn btn-sm" href="register.html">Register</a></div>
+    </div>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+<main id="main">
+
+<section class="section"><div class="wrap">
+  <form class="card form-card wide" id="registerForm" novalidate>
+    <h1 style="font-size:1.8rem">Create your account</h1>
+    <p class="muted">Your enrollment number becomes your username.</p>
+    <div class="row2">
+      <div class="field"><label for="fullname">Full name</label><input id="fullname" name="name" type="text" autocomplete="name" placeholder="Daksh" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="enrolment">Enrollment number</label><input id="enrolment" name="enrolment" type="text" placeholder="25aiml019" maxlength="9" autocapitalize="none" required><small>Format: 2 digits, aiml, 3 digits</small></div>
+      <div class="field"><label for="mobile">Mobile <span class="muted">(optional)</span></label><input id="mobile" name="mobile" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="10 digits"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="password">Password</label><div class="pw"><input id="password" name="password" type="password" autocomplete="new-password" required><button type="button" id="pwToggle" aria-label="Show or hide password">Show</button></div><div class="meter" id="meter" aria-hidden="true"><i></i></div><small>6+ characters, upper and lower case, and a number</small></div>
+      <div class="field"><label for="confirm_password">Confirm password</label><input id="confirm_password" name="confirm_password" type="password" autocomplete="new-password" required></div>
+    </div>
+    <div class="row2">
+      <fieldset class="field"><legend>Gender</legend><div class="choices"><label><input type="radio" name="gender" value="Male">Male</label><label><input type="radio" name="gender" value="Female">Female</label><label><input type="radio" name="gender" value="Other">Other</label></div><div class="err" id="genderErr" role="alert"></div></fieldset>
+      <div class="field"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>AIML</option><option>CSE</option><option>ECE</option><option>EEE</option><option>CIVIL</option><option>MECH</option></select></div>
+    </div>
+    <fieldset class="field"><legend>Hobbies</legend><div class="choices"><label><input type="checkbox" name="hobby" value="Reading">Reading</label><label><input type="checkbox" name="hobby" value="Sports">Sports</label><label><input type="checkbox" name="hobby" value="Music">Music</label></div></fieldset>
+    <div class="field"><label for="address">Address</label><textarea id="address" name="address" required></textarea></div>
+    <div style="display:flex;gap:12px"><button class="btn" type="submit">Register</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+    <p class="muted" style="margin:16px 0 0">Already registered? <a href="login.html">Log in</a></p>
+  </form>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>StudentHub</h4><p>A campus portal for events, student profiles and feedback. Built by Daksh (25AIML019) for AIUE203: Web Development Fundamentals at CSPIT, CHARUSAT.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="event.html">Events</a></li><li><a href="campus.html">Campus life</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="profile.html">Profile</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 StudentHub · Daksh · 25AIML019 · CSPIT, CHARUSAT</div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

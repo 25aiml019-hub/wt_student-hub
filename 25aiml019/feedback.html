@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback | StudentHub</title>
+<meta name="description" content="Send feedback about StudentHub.">
+<meta name="author" content="Daksh (25AIML019)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="feedback">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span>StudentHub</a>
+    <nav class="nav" id="mainNav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="event.html">Events</a><a href="campus.html">Campus</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="feedback.html" aria-current="page">Feedback</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+      <div class="actions" id="authBox"><a class="btn btn-ghost btn-sm" href="login.html">Login</a><a class="btn btn-sm" href="register.html">Register</a></div>
+    </div>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><h1>Feedback</h1><p>Tell us what is working and what should be better.</p></div></section>
+
+<section class="section"><div class="wrap">
+  <form class="card form-card" id="feedbackForm" novalidate style="margin-top:0">
+    <div class="field"><label for="fn">Your name</label><input id="fn" name="name" type="text" autocomplete="name" maxlength="100" required></div>
+    <div class="field"><label for="ft">Your feedback <span class="count" id="fbCount">0 / 2000</span></label><textarea id="ft" name="feedback" maxlength="2000" required></textarea></div>
+    <button class="btn btn-block" type="submit">Submit feedback</button>
+  </form>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>StudentHub</h4><p>A campus portal for events, student profiles and feedback. Built by Daksh (25AIML019) for AIUE203: Web Development Fundamentals at CSPIT, CHARUSAT.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="event.html">Events</a></li><li><a href="campus.html">Campus life</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="profile.html">Profile</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 StudentHub · Daksh · 25AIML019 · CSPIT, CHARUSAT</div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

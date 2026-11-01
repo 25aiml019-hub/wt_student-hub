@@ -1,0 +1,26 @@
+# Environment variables
+/.env
+.env
+
+# Application logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Application uploads (keep folder structure and security rules, ignore user files)
+/storage/uploads/*
+!/storage/uploads/.htaccess
+!/storage/uploads/.gitkeep
+!/storage/uploads/marksheets/
+!/storage/uploads/posters/
+/storage/uploads/marksheets/*
+!/storage/uploads/marksheets/.htaccess
+!/storage/uploads/marksheets/.gitkeep
+/storage/uploads/posters/*
+!/storage/uploads/posters/.htaccess
+!/storage/uploads/posters/.gitkeep
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

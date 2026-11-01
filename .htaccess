@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+<FilesMatch "^\.(env|git)">
+ Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|md|env)$">
+ Require all denied
+</FilesMatch>

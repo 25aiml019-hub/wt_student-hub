@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events | StudentHub</title>
+<meta name="description" content="Search and register for upcoming campus events.">
+<meta name="author" content="Daksh (25AIML019)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="events">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span>StudentHub</a>
+    <nav class="nav" id="mainNav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="event.html" aria-current="page">Events</a><a href="campus.html">Campus</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+      <div class="actions" id="authBox"><a class="btn btn-ghost btn-sm" href="login.html">Login</a><a class="btn btn-sm" href="register.html">Register</a></div>
+    </div>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><h1>Upcoming Events</h1><p>Find something to do on campus and register in one click.</p></div></section>
+
+<section class="section"><div class="wrap">
+  <div class="alert info" id="offline" hidden>The backend is not connected, so you are seeing sample events. Start Apache and MySQL in XAMPP and open this site through <b>http://localhost/</b> to see live events and register.</div>
+  <div class="toolbar">
+    <input type="search" id="eventSearch" placeholder="Search events or venues" aria-label="Search events">
+    <div class="chips" id="eventChips" role="group" aria-label="Filter by category"></div>
+    <span class="muted" id="eventCount" aria-live="polite"></span>
+  </div>
+  <div class="grid g2" id="eventList"><div class="skeleton"></div><div class="skeleton"></div></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>StudentHub</h4><p>A campus portal for events, student profiles and feedback. Built by Daksh (25AIML019) for AIUE203: Web Development Fundamentals at CSPIT, CHARUSAT.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="event.html">Events</a></li><li><a href="campus.html">Campus life</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="profile.html">Profile</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 StudentHub · Daksh · 25AIML019 · CSPIT, CHARUSAT</div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

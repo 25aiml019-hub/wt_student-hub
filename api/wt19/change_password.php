@@ -1,0 +1,20 @@
+<?php
+require_once __DIR__ . '/_bootstrap.php';
+$d = wt19_require_post();
+$u = wt19_require_login();
+wt19_throttle('chpw', 6, 600);
+$cur = (string)($d['current_password'] ?? '');
+$new = (string)($d['new_password'] ?? '');
+$conf = (string)($d['confirm_password'] ?? '');
+if (!wt19_strong_password($new)) wt19_json(['success' => false, 'message' => 'New password needs 6+ characters with an uppercase letter, a lowercase letter and a number.'], 422);
+if ($new !== $conf) wt19_json(['success' => false, 'message' => 'New passwords do not match.'], 422);
+$pdo = getDB();
+$q = $pdo->prepare('SELECT password FROM users WHERE id = ?');
+$q->execute([$u['id']]);
+$hash = $q->fetchColumn();
+if (!$hash || !password_verify($cur, $hash)) wt19_json(['success' => false, 'message' => 'Current password is incorrect.'], 403);
+if (password_verify($new, $hash)) wt19_json(['success' => false, 'message' => 'Choose a password different from the current one.'], 422);
+$pdo->prepare('UPDATE users SET password = ? WHERE id = ?')->execute([password_hash($new, PASSWORD_DEFAULT), $u['id']]);
+session_regenerate_id(true);
+wt19_audit((int)$u['id'], 'wt19_password_change', 'Password changed');
+wt19_json(['success' => true, 'message' => 'Password changed successfully.']);

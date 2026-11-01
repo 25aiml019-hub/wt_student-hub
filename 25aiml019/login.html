@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | StudentHub</title>
+<meta name="description" content="Log in to StudentHub.">
+<meta name="author" content="Daksh (25AIML019)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span>StudentHub</a>
+    <nav class="nav" id="mainNav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="event.html">Events</a><a href="campus.html">Campus</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+      <div class="actions" id="authBox"><a class="btn btn-ghost btn-sm" href="login.html">Login</a><a class="btn btn-sm" href="register.html">Register</a></div>
+    </div>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+<main id="main">
+
+<section class="section"><div class="wrap">
+  <form class="card form-card" id="loginForm" novalidate>
+    <h1 style="font-size:1.8rem">Welcome back</h1>
+    <p class="muted">Log in with your email or enrollment number.</p>
+    <div class="field"><label for="identifier">Email or enrollment number</label><input id="identifier" name="identifier" type="text" autocomplete="username" placeholder="25aiml019 or you@example.com" required></div>
+    <div class="field"><label for="password">Password</label><div class="pw"><input id="password" name="password" type="password" autocomplete="current-password" required><button type="button" id="pwToggle" aria-label="Show or hide password">Show</button></div></div>
+    <button class="btn btn-block" type="submit">Login</button>
+    <p class="center muted" style="margin:16px 0 0">New here? <a href="register.html">Create an account</a></p>
+  </form>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>StudentHub</h4><p>A campus portal for events, student profiles and feedback. Built by Daksh (25AIML019) for AIUE203: Web Development Fundamentals at CSPIT, CHARUSAT.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="event.html">Events</a></li><li><a href="campus.html">Campus life</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="profile.html">Profile</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 StudentHub · Daksh · 25AIML019 · CSPIT, CHARUSAT</div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | StudentHub</title>
+<meta name="description" content="StudentHub: campus events, student profiles and feedback in one place.">
+<meta name="author" content="Daksh (25AIML019)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span>StudentHub</a>
+    <nav class="nav" id="mainNav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="event.html">Events</a><a href="campus.html">Campus</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a></nav>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+      <div class="actions" id="authBox"><a class="btn btn-ghost btn-sm" href="login.html">Login</a><a class="btn btn-sm" href="register.html">Register</a></div>
+    </div>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">CSPIT · CHARUSAT</span>
+    <h1>Everything happening on campus, in one place.</h1>
+    <p>Find upcoming events, register in one click, manage your student profile and tell us how we can improve. StudentHub keeps campus life simple.</p>
+    <div class="row"><a class="btn btn-light" href="event.html">Browse events</a><a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" href="register.html">Create an account</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Explore by interest</h2><p>Pick a category to see what is coming up.</p></div></div>
+    <div class="grid g4">
+      <a class="card" href="event.html?category=Sports" style="text-decoration:none;color:inherit"><img class="thumb" src="sports.jpg" alt="Students playing sports" loading="lazy"><div class="card-body"><h3>Sports</h3><p class="muted">Tournaments, track events and the annual Sports Day.</p></div></a>
+      <a class="card" href="event.html?category=Cultural" style="text-decoration:none;color:inherit"><img class="thumb" src="cultural.jpg" alt="Cultural performance on stage" loading="lazy"><div class="card-body"><h3>Cultural</h3><p class="muted">Music, dance, drama and festival nights.</p></div></a>
+      <a class="card" href="event.html?category=Academic" style="text-decoration:none;color:inherit"><img class="thumb" src="eg.jpg" alt="Students in a seminar hall" loading="lazy"><div class="card-body"><h3>Academic</h3><p class="muted">Workshops, seminars and guest lectures.</p></div></a>
+      <a class="card" href="event.html?category=Technical" style="text-decoration:none;color:inherit"><div class="thumb-art" aria-hidden="true">&lt;/&gt;</div><div class="card-body"><h3>Technical</h3><p class="muted">Coding contests, hackathons and tech talks.</p></div></a>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Upcoming events</h2><p>The next three on the calendar.</p></div><a class="btn btn-ghost btn-sm" href="event.html">See all events</a></div>
+    <div class="grid g2" id="homeEvents"><div class="skeleton"></div><div class="skeleton"></div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><h3>Create your account</h3><p class="muted">Register with your email and enrollment number. It takes under a minute.</p></li>
+        <li><h3>Pick your events</h3><p class="muted">Search and filter events, then register or cancel whenever your plans change.</p></li>
+        <li><h3>Track everything</h3><p class="muted">Your dashboard lists your registrations and keeps your profile up to date.</p></li>
+      </ol>
+    </div>
+    <div class="card"><img src="images.jpg" alt="Students collaborating around a table" style="width:100%;height:auto" loading="lazy">
+      <div class="card-body grid g2"><div class="tile" style="padding:0"><div class="num" id="statEvents">0</div><div class="lbl">Upcoming events</div></div><div class="tile" style="padding:0"><div class="num">4</div><div class="lbl">Campus clubs</div></div></div></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>StudentHub</h4><p>A campus portal for events, student profiles and feedback. Built by Daksh (25AIML019) for AIUE203: Web Development Fundamentals at CSPIT, CHARUSAT.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="event.html">Events</a></li><li><a href="campus.html">Campus life</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="profile.html">Profile</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 StudentHub · Daksh · 25AIML019 · CSPIT, CHARUSAT</div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
